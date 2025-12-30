@@ -1,0 +1,32 @@
+
+#payment-form {
+    width: 100%;
+}
+#payment-element {
+    margin-bottom: 24px;
+}
+.pay-now-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.pay-now-btn:hover:not(:disabled) {
+    background-color: #218838;
+}
+.pay-now-btn:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+#payment-message {
+    color: #dc3545;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    text-align: center;
+}

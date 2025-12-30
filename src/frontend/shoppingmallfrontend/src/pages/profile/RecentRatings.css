@@ -1,0 +1,85 @@
+.recent-ratings {
+    color: var(--color-text-primary);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    color: var(--color-text-primary);
+}
+
+.ratings-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between each review item */
+}
+
+.rating-item {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.rating-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* THE FIX: Constrain the image size */
+.rating-album-art {
+    width: 60px;
+    height: 60px;
+    object-fit: cover; /* Prevents the image from stretching */
+    border-radius: 4px;
+    flex-shrink: 0; /* Stops the image from shrinking if text is long */
+}
+
+.rating-details {
+    flex-grow: 1; /* Allows this section to take up the available space */
+}
+
+.rating-product-link {
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
+.rating-product-link:hover {
+    text-decoration: underline;
+}
+
+.rating-title {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.rating-comment {
+    color: #555;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.rating-score {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; /* Prevents the score from wrapping */
+}
+
+.star-icon {
+    color: #f39c12; /* Gold color for the star */
+    font-size: 1rem;
+    line-height: 1; /* Helps with vertical alignment */
+}
+
+.no-ratings-message {
+    color: #888;
+    padding: 20px 0;
+    text-align: center;
+}

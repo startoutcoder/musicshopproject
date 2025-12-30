@@ -1,0 +1,26 @@
+.display-stars {
+    display: flex;
+    color: #f39c12;
+}
+.display-stars .star {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.display-stars .star.empty {
+    color: #e0e0e0;
+}
+.star.half {
+    position: relative;
+    display: inline-block;
+}
+.star.half .star-half-filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.star.half .star-half-empty {
+    color: #e0e0e0;
+}

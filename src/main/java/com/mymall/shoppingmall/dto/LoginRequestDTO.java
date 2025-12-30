@@ -1,0 +1,9 @@
+package com.mymall.shoppingmall.dto;
+
+import lombok.Data;
+
+@Data
+public class LoginRequestDTO {
+    private String email;
+    private String password;
+}

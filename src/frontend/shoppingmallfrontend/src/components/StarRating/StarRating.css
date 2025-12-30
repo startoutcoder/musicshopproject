@@ -1,0 +1,35 @@
+.star-rating-input {
+    display: flex;
+    align-items: center;
+}
+.star-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+.star-half {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+}
+.star-half.left {
+    left: 0;
+}
+.star-half.right {
+    right: 0;
+}
+.star-svg {
+    width: 28px;
+    height: 28px;
+    position: relative;
+}
+.star-background {
+    fill: #f0f0f0;
+}
+.star-foreground {
+    fill: #f39c12;
+}
+.star-wrapper:hover .star-svg {
+    transform: scale(1.2);
+}

@@ -1,0 +1,166 @@
+/* Main container for the settings page */
+.settings-page-container {
+    background-color: var(--color-background);
+    padding: 2rem 1rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.settings-content {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Styling for each major section (Account Info, Social) */
+.settings-section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+/* The core row layout using Flexbox */
+.settings-row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.95rem;
+}
+
+.settings-row:last-child {
+    border-bottom: none;
+}
+
+/* Label on the left */
+.settings-label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.settings-icon {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+}
+
+/* Value in the middle */
+.settings-value {
+    flex: 2;
+    color: var(--color-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Action link/button on the right */
+.settings-action {
+    flex: 0 0 120px;
+    text-align: right;
+}
+
+/* Themed primary badge */
+.primary-badge {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Themed danger button */
+.delete-button {
+    background-color: transparent;
+    border: 1px solid var(--color-danger, #dc3545); /* Fallback color */
+    color: var(--color-danger, #dc3545);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: var(--color-danger, #dc3545);
+    color: var(--color-on-primary, #ffffff);
+}
+
+/* Themed inline editing input */
+.inline-edit-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Themed save button */
+.btn-save {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-save:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* Themed cancel button */
+.btn-cancel {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-cancel:hover {
+    background-color: var(--color-border);
+}
+
+.full-width-error {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: var(--color-danger, #dc3545);
+}
+
+/* Themed link-style button */
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}

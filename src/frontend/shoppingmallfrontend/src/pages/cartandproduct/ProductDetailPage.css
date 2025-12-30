@@ -1,0 +1,284 @@
+
+.product-detail-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.product-main-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product-detail-image-container {
+    flex: 1;
+    max-width: 450px;
+}
+
+.product-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-detail-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-artist-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-text-primary);
+    margin: 0 0 5px 0;
+}
+
+.detail-product-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+
+.detail-category-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.detail-product-price {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-text-primary);
+    margin-bottom: 20px;
+}
+
+.detail-product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin-bottom: 20px;
+}
+
+.detail-page-btn {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.tracklist-section {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.review-section {
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.review-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.review-form {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: var(--color-text-on-surface);
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+.review-form h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.review-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.rating-submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating-submit button {
+    padding: 10px 20px;
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+.review-item:last-child {
+    border-bottom: none;
+}
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.review-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.review-actions {
+    display: flex;
+    gap: 10px;
+}
+.review-actions button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.review-actions button:hover {
+    background-color: #f0f0f0;
+}
+.review-actions .delete-btn {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+.review-actions .delete-btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.review-rating-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.rating-number-text {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+.review-comment {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    color: #444;
+}
+.review-meta {
+    font-size: 0.9rem;
+    color: #999;
+}
+.author-link {
+    color: #555;
+    font-weight: 600;
+    text-decoration: none;
+}
+.author-link:hover {
+    text-decoration: underline;
+}
+
+.review-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.review-edit-form input,
+.review-edit-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.review-edit-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.edit-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edit-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-actions .save-btn {
+    background-color: #28a745; /* Green for save */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.edit-actions .cancel-btn {
+    background-color: transparent;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px; /* Give it a larger click area */
+}
+
+/* --- Login Prompt --- */
+.login-prompt {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+.login-prompt a {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-prompt a:hover {
+    text-decoration: underline;
+}
